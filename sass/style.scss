@@ -1,0 +1,169 @@
+
+$primary : #FFFFFF;
+$secondary : #4F4B4B;
+$info : #000000;
+$spacer: 2rem !default;
+$headings-font-family : 'Montserrat', sans-serif;
+
+
+@import "modal";
+// @import "../bootstrap-4.5.3/scss/bootstrap.scss";
+@import 'home';
+@import 'curtain';
+
+
+
+@media screen and (min-width: 2000px) {
+	.search {
+		width: 47%;
+	}
+
+}
+
+@media screen and (max-width: 1999px) {
+	.search {
+		 width: 73%;
+	}
+}
+
+
+
+@media screen and (max-width: 1500px) {
+	.search {
+		 width: 62%;
+	}
+}
+
+
+
+@media screen and (min-width: 800px) {
+	.my-button{
+		display : none;
+	}
+	.search{
+		display : block;
+	}
+
+ 	.nz-logo {
+		display: none;
+	}
+
+	.img__description {
+		width: 90%;
+	}
+
+	.img-modal {
+		width: 200px;
+	}
+
+	.para-modal {
+	  font-size: 20px;
+	}
+
+	.hed-modal {
+		font-size: 23px;
+	}
+
+
+}
+
+@media screen and (max-width: 799px) {
+	.my-button{
+		display : block;
+	}
+	.search{
+		display : none;
+	}
+	.active{
+		display : block;
+	}
+
+	.hero-text h3{
+		display: none;
+	}
+
+	.search {
+		width: 45%;
+	}
+
+	.search input {
+		margin: auto;
+		display: block;
+	}
+
+	.sub-headers {
+		display: none;
+	}
+
+	.my-title {
+		margin-top: 10px;
+		font-size: 30px;
+	}
+
+
+
+	.nz-logo {
+		display: block;
+	}
+
+	#comment {
+		font-size: 10px;
+	}
+
+	  .overlay {overflow-y: auto;}
+	  .overlay a {font-size: 20px}
+	  .overlay .closebtn {
+	  font-size: 40px;
+	  top: 15px;
+	  right: 35px;
+  }
+
+	.img-modal {
+		width: 200px;
+	}
+
+	.para-modal {
+	  font-size: 10px;
+	}
+
+	.hed-modal {
+		font-size: 18px;
+	}
+
+
+
+}
+
+
+@media screen and (max-width: 599px) {
+	.img__description {
+		width: 92%;
+		font-size: 30px;
+	}
+
+	.my-tittle-trips {
+		font-size: 30px;
+	}
+
+	.details {
+	  width: 300px;
+	}
+
+	.form-control {
+		width: 100%;
+	}
+
+	.img-modal {
+		width: 100px;
+	}
+
+	.para-modal {
+	  font-size: 10px;
+	}
+
+	.hed-modal {
+		font-size: 15px;
+	}
+
+
+}

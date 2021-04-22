@@ -1,0 +1,157 @@
+
+
+  html {
+     scroll-behavior: smooth;
+  }
+
+  .hero-image {
+    background-image: url("../images/cover-img.jpg");
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .hero-text {
+    width: 60%;
+    border-top : 5px solid white;
+    border-bottom : 5px solid white;
+  }
+
+  .search {
+    opacity: 0.8;
+    width: 60%;
+    border-radius: 15px;
+  }
+
+  .search input {
+    height: 77px;
+    width: 156px;
+    border-radius: 15px;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .input {
+    height: 77px;
+    width: 156px;
+    border-radius: 15px;
+    display: inline-block;
+  }
+
+  .my-button {
+    border: 3px solid white;
+    width: 180px;
+  }
+
+  .other-btn {
+    width: 200px;
+    margin: 20px;
+    margin-top: -135px;
+    border: 3px solid white;
+  }
+
+  .logo {
+    width: 140px;
+  }
+
+  .my-icons {
+    font-size: 15px;
+    border-radius: 15px;
+  }
+
+  .my-title {
+    font-size:70px
+  }
+
+
+  .menu {
+    color: white;
+    font-size: 40px;
+    margin-top: -43px;
+    cursor: pointer;
+    // position: fixed;
+  }
+
+  .nz-logo {
+    width: 120px;
+    margin-top: -43px;
+  }
+
+  .qna {
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+  }
+
+  #comment {
+    width: 19.5%;
+    text-transform: uppercase;
+    opacity: 0.8;
+  }
+
+
+.img__wrap {
+  position: relative;
+
+}
+
+.img__description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #000000;
+  color: #fff;
+  visibility: hidden;
+  opacity: 0.5;
+  width: 85%;
+  margin-left: 26px;
+  margin-top: 10px;
+  padding: 10px;
+  transition: opacity .2s, visibility .2s;
+}
+
+.img__wrap:hover .img__description {
+  visibility: visible;
+  opacity: 0.5;
+}
+
+.the-phone {
+  font-size: 20px;
+}
+
+.icons {
+  font-size: 30px;
+}
+
+
+.myphone-div {
+  margin-top: -30px;
+}
+
+#map {
+  height: 500px;
+  width: 100%;
+}
+
+.form-control {
+  width: 21%;
+}
+
+.details {
+  width: 300px;
+}
+
+#accommodations {
+  margin-top: -16px;
+}
+
+#trips {
+  margin-top: -16px;
+}
+
+.modal-text {
+  font-size: 40px;
+}
