@@ -444,8 +444,8 @@ function initMap() {
   //  $('#result').text('');
 	  //access properties of objects using index number
 	  $('#result').append( '<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-2">' +
-	                          '<div class="bg-info card text-danger" >' +
-	                             '<img id="' + accommodations[j].id + '" src="images/' + accommodations[j].photo + '" class="card-img-top py-2 moreDetails" alt="' + accommodations[j].categorie + '">' +
+	                          '<div class="bg-dark my-5 card text-danger" >' +
+	                             '<img id="' + accommodations[j].id + '" src="images/' + accommodations[j].photo + '" class="card-img-top py-2 moreDetails mb-5" alt="' + accommodations[j].categorie + '">' +
                                // '<div id="map" class=""></div>' +
 															 '<a id="' + accommodations[j].id + '"   class="mx-auto other-btn text-white p-2 btn btn-lg rounded-pill moreDetails">VIEW</a>' +
 	                          '</div>' +

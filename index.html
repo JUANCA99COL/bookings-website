@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>TOURISM NZ</title>
-  <!-- <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon"> -->
-  <!-- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=font1|font2|etc" type="text/css"> -->
   <!-- bootstrap -->
   <link rel="stylesheet" href="bootstrap-4.5.2-dist/css/bootstrap.min.css">
 
@@ -32,42 +30,42 @@
 
 
 
-  <div id="myNav" class="overlay">
+  <!-- <div id="myNav" class="overlay">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <div class="overlay-content">
       <a href="#accommodations">ACCOMMODATION</a>
       <a href="#trips">TRIPS</a>
     </div>
-  </div>
-
+  </div> -->
 
   <section id="home">
     <div class="hero-image py-5">
       <div class="top-nav">
-        <span class="menu float-right mr-4" onclick="openNav()">&#9776;</span>
-        <img class="nz-logo float-left ml-4" src="images/nz-logo.png" alt="">
+        <!-- <span class="menu float-right mr-4" onclick="openNav()">&#9776;</span> -->
+        <img class="nz-logo float-start ml-4" src="images/nz-logo.png" alt="">
+        <img class="leavelo float-end" src="images/logo-summa.png" alt="">
       </div>
 
-      <div class="mt-5 p-3 mx-auto text-white text-center hero-text">
-        <h1 class="my-title">TOURISM NZ</h1>
-        <div class="sub-headers">
+      <div class="my-5 py-3 mx-auto text-white text-center hero-text">
+        <h1 class="my-title mt-5">TOURISM NZ</h1>
+        <div class="">
           <h3 class="d-inline m-2">Meals</h3>
           <h3 class="d-inline m-2">Accommodation</h3>
           <h3 class="d-inline m-2">Trips</h3>
         </div>
       </div>
 
-       <form class="search mx-auto my-3 p-3 bg-info">
+       <form class="search mx-auto my-3 p-3 oscuro">
         <select id="city" class="form-control place pl-2 font-weight-bold input">
              <option>Destination</option>
              <option value="Auckland">Auckland</option>
              <option value="Wellington">Wellington</option>
              <option value="Queenstown">Queenstown</option>
              <option value="Rotorua">Rotorua</option>
-           </select>
-            <input  id="startDate" class="pl-2 font-weight-bold" type="text" placeholder="Check In">
-            <input  id="endDate" class="pl-2 font-weight-bold" type="text" placeholder="Check Out">
-            <select id="guests" class="input form-control place  pl-2 font-weight-bold">
+        </select>
+            <input  id="startDate" class="pl-2 my-4 font-weight-bold" type="text" placeholder="Check In">
+            <input  id="endDate" class="pl-2 my-3 font-weight-bold" type="text" placeholder="Check Out">
+            <select id="guests" class="input form-control place  pl-2 mt-2 font-weight-bold">
                  <option>Guests</option>
                  <option value="1">1</option>
                  <option value="2">2</option>
@@ -76,25 +74,22 @@
 
                </select>
 
-               <select id="meal" class=" input form-control place  pl-2 font-weight-bold">
+               <select id="meal" class=" input form-control place pl-2 mt-4 font-weight-bold">
                     <option>Meal option</option>
                     <option value="25">yes</option>
                     <option value="0">no</option>
 
                 </select>
-            <button id="btn-search" class="pl-2 font-weight-bold input" type="button">Search...</button>
+            <button id="btn-search" class="pl-2 mt-4 font-weight-bold input" type="button">Search...</button>
        </form>
 
 
 
         <div class="">
-          <a class="mx-auto my-4 my-button btn btn-outline-primary btn-lg rounded-pill" href="#">BOOK</a>
-          <img class="mt-5 ml-3 logo" src="images/small-nz-logo.png" alt="">
-          <i class="mr-3 mt-5 float-right qna fas fa-question-circle"></i>
-          <p id="comment" class="mt-5 mr-2 float-right p-1 rounded-pill bg-primary border border-primary">click on the search bar to book</p>
+          <a class="mx-auto my-4 my-button btn btn-outline-light btn-lg rounded-pill" href="#">BOOK</a>
         </div>
 
-        <h1 id="message" class="pt-5 text-white text-center">Check Accomodations down below</h1>
+        
 
     </div>
 
@@ -104,10 +99,10 @@
     <section id="accommodations">
 
       <!-- Cards and modal column -->
-      <div  class="bg-info my-2 display-4">
+      <div  class="oscuro my-2 display-4">
 
       <!-- Result container  -->
-      <div id="result" class="container pt-5 bg-info row mx-auto clearfix ">
+      <div id="result" class="container pt-5 oscuro row mx-auto clearfix ">
 
         <div id="map" class=" mb-5"></div>
 
@@ -118,16 +113,16 @@
 
 
         <!-- My own modal -->
-        <div class="bg-primary" id="myOwnModal">
+        <div class="myBackgrounds" id="myOwnModal">
 
-          <div class="bg-primary clearfix">
+          <div class="oscuro text-white clearfix">
 
             <h1  class="d-inline" id="exampleModalLabel">Modal Heading </h1>
-            <button id="close-btn" class="float-right bg-info text-white" type="button" name="button"> &times; </button>
+            <button id="close-btn" class="float-right oscuro text-white" type="button" name="button"> &times; </button>
 
           </div>
 
-          <div id="imageAccommodations" class="bg-primary modal-body">
+          <div id="imageAccommodations" class="myBackgrounds text-white modal-body">
 
           </div>
 
@@ -135,73 +130,21 @@
 
     </section>
 
-
-    <section id="trips" class="pt-5 bg-info">
-      <h1 class="text-white text-center">TRIPS & PLANS</h1>
-      <div class="container pb-5">
-
-        <!-- row 1 -->
-        <div class="row clearfix">
-
-          <!-- col-1 -->
-
-            <div class="mt-5 img__wrap col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
-              <a target="_blank" href="https://www.tripadvisor.co.nz/Attraction_Review-g657271-d301150-Reviews-Lake_Pukaki-Canterbury_Region_South_Island.html">
-              <img class="img-thumbnail img__img" src="images/mount-1.jpg" alt=""/>
-              <p class="img__description">Lake Pukaki, New Zealand
-                <br><br><br><br>
-                Lake Pukaki is the largest of three roughly parallel alpine lakes
-                running north–south along the northern edge of
-                the Mackenzie Basin on New Zealand's South Island.
-                The others are Lakes Tekapo and Ohau.</p>
-              </a>
-            </div>
-
-
-          <!-- col-2 -->
-            <div class="mt-5 img__wrap col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
-              <a target="_blank" href="https://www.newzealand.com/nz/feature/roys-peak-track/">
-              <img class="img-thumbnail img__img" src="images/mount-2.jpg" alt=""/>
-              <p class="img__description">Roys Peak, New Zealand
-              <br><br><br><br>
-              Take in breathtaking views over Lake Wānaka, Mount Aspiring/Tititea and surrounding peaks after a steep
-              climb through alpine meadows and tussock grasslands to the summit. This is a popular track and one of our best day hikes.</p>
-              </a>
-            </div>
-
-
-          <!-- col-3 -->
-              <div class="mt-5 img__wrap col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
-                  <a target="_blank" href="https://www.tripadvisor.co.nz/Tourism-g3392661-Castle_Hill_Canterbury_Region_South_Island-Vacations.html">
-                  <img class="img-thumbnail img__img" src="images/mount-3.jpg" alt=""/>
-                  <p class="img__description">Castle Hill, New Zealand
-                  <br><br><br><br>
-                  Castle Hill is a location and a high country station in New Zealand's
-                  South Island. It is located at an altitude of 700 metres,
-                  close to State Highway 73 between Darfield and Arthur's Pass. </p>
-                  </a>
-              </div>
-
-
-
-
-        </div>
-
+    <div class="footer oscuro py-3">
+      <div class="copyright">
+        <p class="ml-4 text-white text-center">© Copyright 1999-2021 Tourism New Zealand</p>
       </div>
-    </section>
-
-    <!-- <div class="footer bg-primary m-3">
-      <div class="mb-2 d-inline-block float-left ">
-        <i class="icons fab fa-facebook-square"></i>
-        <i class="icons fab fa-instagram"></i>
-        <i class="icons far fa-envelope"></i>
+      
+      <div class="icons-div">
+        <a href="https://www.facebook.com/purenewzealand"><img class="socials" src="images/facebook-brands.svg" alt=""></a>
+        <a href="https://twitter.com/PureNewZealand?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img class="socials" src="images/twitter-square-brands.svg" alt=""></a>
+        <a href="https://www.instagram.com/purenewzealand/?hl=en"><img class="socials mr-4" src="images/instagram-brands.svg" alt=""></a>
       </div>
+      
+    </div>
 
-      <div class="mb-2 float-right ">
-        <i class="icons d-inline fas fa-phone-alt mr-2"></i>
-        
-      </div>
-    </div> -->
+
+
 
 
 

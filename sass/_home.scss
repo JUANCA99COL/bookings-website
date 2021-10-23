@@ -1,27 +1,47 @@
 
 
-  html {
-     scroll-behavior: smooth;
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background: black;
+  }
+
+  #accommodations {
+    margin-top: -16px;
+  }
+  
+  #trips {
+    margin-top: -16px;
+  }
+
+  #comment {
+    width: 19.5%;
+    text-transform: uppercase;
+    opacity: 0.8;
   }
 
   .hero-image {
-    background-image: url("../images/cover-img.jpg");
-    height: auto;
+    background-image: url("../images/mont-red.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 900px;
+
   }
 
   .hero-text {
     width: 60%;
-    border-top : 5px solid white;
-    border-bottom : 5px solid white;
   }
 
   .search {
-    opacity: 0.8;
+    opacity: 0.7;
     width: 60%;
     border-radius: 15px;
+  }
+
+  h3 {
+    font-size: 15px;
   }
 
   .search input {
@@ -75,19 +95,20 @@
 
   .nz-logo {
     width: 120px;
-    margin-top: -43px;
+    margin-top: -15px;
+  }
+
+  .leavelo {
+    width: 200px;
+    margin-top: -40px;
+    float: right;
+    margin-right: -28px;
   }
 
   .qna {
     font-size: 40px;
     color: white;
     cursor: pointer;
-  }
-
-  #comment {
-    width: 19.5%;
-    text-transform: uppercase;
-    opacity: 0.8;
   }
 
 
@@ -144,14 +165,34 @@
   width: 300px;
 }
 
-#accommodations {
-  margin-top: -16px;
-}
-
-#trips {
-  margin-top: -16px;
-}
-
 .modal-text {
   font-size: 40px;
 }
+
+.myBackgrounds {
+  background: black;
+  opacity: 0.9; 
+}
+
+.oscuro {
+  background: black;
+}
+
+.socials {
+  width: 40px;
+  padding: 10px;
+  filter: invert(99%) sepia(96%) saturate(18%) hue-rotate(239deg) brightness(104%) contrast(100%);
+}
+
+.icons-div {  
+  float: right;
+  margin-top: -50px;
+}
+
+.copyright {
+  float: left;
+  margin-top: -35px;
+}
+
+
+

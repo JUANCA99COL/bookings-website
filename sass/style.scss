@@ -7,7 +7,6 @@ $headings-font-family : 'Montserrat', sans-serif;
 
 
 @import "modal";
-// @import "../bootstrap-4.5.3/scss/bootstrap.scss";
 @import 'home';
 @import 'curtain';
 
@@ -17,15 +16,14 @@ $headings-font-family : 'Montserrat', sans-serif;
 	.search {
 		width: 47%;
 	}
-
 }
+
 
 @media screen and (max-width: 1999px) {
 	.search {
 		 width: 73%;
 	}
 }
-
 
 
 @media screen and (max-width: 1500px) {
@@ -35,17 +33,12 @@ $headings-font-family : 'Montserrat', sans-serif;
 }
 
 
-
 @media screen and (min-width: 800px) {
 	.my-button{
 		display : none;
 	}
 	.search{
 		display : block;
-	}
-
- 	.nz-logo {
-		display: none;
 	}
 
 	.img__description {
@@ -63,8 +56,6 @@ $headings-font-family : 'Montserrat', sans-serif;
 	.hed-modal {
 		font-size: 23px;
 	}
-
-
 }
 
 @media screen and (max-width: 799px) {
@@ -89,21 +80,17 @@ $headings-font-family : 'Montserrat', sans-serif;
 	.search input {
 		margin: auto;
 		display: block;
+		width: 100%;
+		
 	}
 
-	.sub-headers {
-		display: none;
+	.input {
+		width: 100%;
 	}
 
 	.my-title {
 		margin-top: 10px;
 		font-size: 30px;
-	}
-
-
-
-	.nz-logo {
-		display: block;
 	}
 
 	#comment {
@@ -130,8 +117,17 @@ $headings-font-family : 'Montserrat', sans-serif;
 		font-size: 18px;
 	}
 
+	.hero-image {
+		height: 1103px;
+	}
 
-
+	#myOwnModal {
+		width: 100%;
+		position: fixed;
+		top: 94px;
+		left: 0%;
+		z-index: 2;
+	}
 }
 
 
@@ -163,6 +159,11 @@ $headings-font-family : 'Montserrat', sans-serif;
 
 	.hed-modal {
 		font-size: 15px;
+	}
+
+	.copyright {
+		display: none;
+		visibility: hidden;
 	}
 
 
